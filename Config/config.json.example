@@ -1,0 +1,13 @@
+// You should follow the config json pattern to make things work
+{
+  "database": {
+    "name": {
+      "engine": "mysql", // The options here are: mysql or postgres
+      "host": "<host>",
+      "port": "<port>",
+      "user": "<db_user>",
+      "pass": "<password>",
+      "database": "<db_name>"
+    }
+  }
+}

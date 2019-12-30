@@ -1,5 +1,8 @@
 <?php
 
+namespace Database\Postgres;
+
+use PDOConnector;
 
 class Connector
 {

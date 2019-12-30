@@ -1,4 +1,4 @@
-// You should follow the config json pattern to make things work
+// You should follow the config json pattern in this file and create a file named config.json to make things work.
 {
   "database": {
     "name": {

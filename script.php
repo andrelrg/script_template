@@ -1,8 +1,10 @@
 <?php
 
-global $json;
-$str = file_get_contents(dirname(__FILE__).'/config.json');
-$json = json_decode($str, true);
+// Composer Autoload.
+require_once __DIR__ . "/vendor/autoload.php";
+
+use Config\Config;
+Config::get();
 
 $connAL = new PDO("mysql:host=".$json["hostAL"].";port=". $json["portAL"] .";dbname=".$json["databaseAL"], $json["userAL"], $json["passwordAL"], array(PDO::ATTR_PERSISTENT => true));
 

@@ -1,3 +1,4 @@
 config.json
 composer.lock
 vendor/
+.idea/

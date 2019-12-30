@@ -4,6 +4,7 @@ namespace Database\MySQL;
 
 use Database\ConnectorBase;
 use Database\PDOConnector;
+use PDO;
 
 class Connector extends ConnectorBase
 {
@@ -12,8 +13,10 @@ class Connector extends ConnectorBase
 
     public function __construct(string $connName){
         parent::__construct($connName);
-        $connStr = sprintf($this->connStr, $this->conn["host"], $this->conn["port"], $this->conn["database"]);
-        $this->conn;
-        return PDOConnector::connect($connStr,  $this->conn["user"],  $this->conn["pass"]);
+        $this->connStr = sprintf($this->connStr, $this->conn["host"], $this->conn["port"], $this->conn["database"]);
+    }
+
+    public function connect(): PDO{
+        return PDOConnector::connect($this->connStr,  $this->conn["user"],  $this->conn["pass"]);
     }
 }

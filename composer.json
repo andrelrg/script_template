@@ -5,7 +5,8 @@
   "autoload": {
     "psr-4": {
       "Database\\": "Database/",
-      "Config\\": "Config/"
+      "Config\\": "Config/",
+      "Scripts\\": "Scripts/"
     }
   }
 }

@@ -2,7 +2,7 @@
 {
   "database": {
     "name": {
-      "engine": "mysql", // The options here are: mysql or postgres
+      "engine": "mysql", // The options here are: mysql or pgsql (postgres)
       "host": "<host>",
       "port": "<port>",
       "user": "<db_user>",

@@ -9,8 +9,8 @@ The Template will help you with the configuration of your script, handle databas
 
 ## Using configuration Helper
 
-In the `script.php` you'll see a static call to a class method to get a congig, this will load the configuration file `config.json` inside Config directory, this file should follow the config.json.example pattern. <br>
-The config.json will be in array format inside the global var `$config`.
+In the `script.php` you'll see a static call to a class method to get config, this will load the configuration file `config.json` that is located inside Config directory (this file should follow the config.json.example pattern). <br>
+The config.json will be loaded in array format inside the global var `$config`.
 
 ## Using Database Helper
 A PDO connection will be made calling the `Connector` class of the connection you want, like in this example:
